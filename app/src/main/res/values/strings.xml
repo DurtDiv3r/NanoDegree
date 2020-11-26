@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">If The Shoe Fits</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="email_text">Email:</string>
+    <string name="email_hint">Enter Email...</string>
+    <string name="password_text">Password:</string>
+    <string name="password_hint">Enter Password...</string>
+    <string name="login_button_text">LOGIN</string>
+    <string name="register_button_text">REGISTER</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_title">Welcome to our store</string>
+    <string name="welcome_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit tempor felis eget viverra. \n\nPraesent vulputate lorem tellus, et egestas metus porta quis. Suspendisse tellus orci, lobortis vitae suscipit nec, rhoncus vitae mi. In ultricies purus non nisl vestibulum viverra. In hac habitasse platea dictumst. Nulla facilisi. Sed sit amet tincidunt quam. Aliquam tincidunt dui vel tellus vehicula sollicitudin. In malesuada, ipsum eu aliquet tempor, lorem nulla congue metus, sed vulputate mi ex nec augue.\n\n Aenean iaculis ligula ac magna pretium, sed maximus ex mattis.  Mauris iaculis arcu in tellus viverra, et lobortis orci ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus finibus sem quam, vitae condimentum odio molestie in. Sed porta hendrerit massa quis gravida. Fusce bibendum arcu sed velit cursus</string>
+    <string name="instruction_title">Instructions</string>
+    <string name="instruction_body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</string>
+    <string name="instruction_button_text">View Shoes</string>
+    <string name="welcome_button_text">View Instructions</string>
+    <string name="title_activity_test">TestActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="shoe_name_label">Name</string>
+    <string name="shoe_name_hint">Enter Shoe Name</string>
+    <string name="company_name_label">Manufacturer</string>
+    <string name="company_hint">Enter Shoe Manufacturer</string>
+    <string name="shoe_size_label">Shoe Size</string>
+    <string name="shoe_size_hint">Size</string>
+    <string name="shoe_description">Description</string>
+    <string name="save_button_label">SAVE</string>
+    <string name="cancel_button_label">CANCEL</string>
+    <string name="login_fragment_label">Login</string>
+    <string name="welcome_fragment_label">Welcome</string>
+    <string name="instruction_fragment_label">Instructions</string>
+</resources>
