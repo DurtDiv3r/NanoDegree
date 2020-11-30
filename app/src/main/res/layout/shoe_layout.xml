@@ -5,6 +5,7 @@
         style="@style/CardStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <!--        Linear layout because there is no complex layout needed-->
 
         <LinearLayout
             android:layout_width="match_parent"
