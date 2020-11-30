@@ -3,8 +3,11 @@ package com.udacity.shoestore.store
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.*
+import android.widget.EditText
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.InverseMethod
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -33,15 +36,16 @@ class ShoeDetailFragment : Fragment() {
         setupTextWatchers()
 
         binding.saveButton.setOnClickListener {
-            val shoeSize: String = binding.shoeSizeInput.text.toString()
-            val shoe: Shoe = Shoe(
-                binding.nameInput.text.toString(),
-                shoeSize.toDouble(),
-                binding.companyInput.text.toString(),
-                binding.descriptionInput.text.toString(),
-                listOf()
-            )
-            shoeViewModel.add(shoe)
+//            val shoeSize: String = binding.shoeSizeInput.text.toString()
+//            val shoe: Shoe = Shoe(
+//                binding.nameInput.text.toString(),
+//                shoeSize.toDouble(),
+//                binding.companyInput.text.toString(),
+//                binding.descriptionInput.text.toString(),
+//                listOf()
+//            )
+//            shoeViewModel.add(shoe)
+            shoeViewModel.add()
         }
 
         binding.cancelButton.setOnClickListener {

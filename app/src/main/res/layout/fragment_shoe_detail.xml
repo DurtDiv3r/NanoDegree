@@ -39,6 +39,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
+                android:text="@{shoeViewModel.newShoe.name}"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +66,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
+                android:text="@{shoeViewModel.newShoe.company}"
                 android:inputType="textPersonName"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -78,25 +80,23 @@
                 android:id="@+id/sizeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginEnd="64dp"
                 android:text="@string/shoe_size_label"
-                app:layout_constraintStart_toEndOf="@+id/companyTextView"
-                app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameInput"
+                app:layout_constraintVertical_bias="0.052" />
 
             <EditText
                 android:id="@+id/shoeSizeInput"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="76dp"
                 android:ems="10"
+                android:text="@{Double.toString(shoeViewModel.newShoe.size)}"
                 android:inputType="numberDecimal"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.718"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sizeLabel"
-                app:layout_constraintVertical_bias="0.005" />
+                app:layout_constraintTop_toBottomOf="@+id/sizeLabel" />
 
             <TextView
                 android:id="@+id/descriptionLabel"
@@ -119,6 +119,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
+                android:text="@{shoeViewModel.newShoe.description}"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,13 +44,14 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
+    //Ensures that Login and Register buttons only Clickable if a edittexts not empty and a properly formatted email entered
     private val textWatcher = object : TextWatcher {
         override fun afterTextChanged(s: Editable?) {
         }
         override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
         }
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            if (binding.emailEditText.text.isNotEmpty() && binding.editTextTextPassword.text.isNotEmpty()) {
+            if (binding.emailEditText.text.isNotEmpty() && binding.editTextTextPassword.text.isNotEmpty() && binding.emailEditText.text.isValidEmail()) {
                 binding.loginButton.isEnabled = true
                 binding.registerButton.isEnabled = true
             } else {
@@ -58,4 +60,7 @@ class LoginFragment : Fragment() {
             }
         }
     }
+
+    // Checks if email is formatted correctly
+    fun CharSequence?.isValidEmail() = !isNullOrEmpty() && Patterns.EMAIL_ADDRESS.matcher(this).matches()
 }
