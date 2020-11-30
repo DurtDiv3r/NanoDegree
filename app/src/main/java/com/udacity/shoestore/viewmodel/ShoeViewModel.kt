@@ -32,5 +32,4 @@ class ShoeViewModel : ViewModel() {
         _navigate.value = false
         _newShoe.value = Shoe("", 0.0, "", "")
     }
-
 }

@@ -58,7 +58,7 @@ class LoginFragment : Fragment() {
         }
     }
 
-    fun clearInputs() {
+    private fun clearInputs() {
         binding.emailEditText.text.clear()
         binding.editTextTextPassword.text.clear()
     }
