@@ -3,11 +3,8 @@ package com.udacity.shoestore.store
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.*
-import android.widget.EditText
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.InverseMethod
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -16,7 +13,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
-import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.viewmodel.ShoeViewModel
 
 
@@ -32,19 +28,9 @@ class ShoeDetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
         binding.shoeViewModel = shoeViewModel
         binding.lifecycleOwner = this
-
         setupTextWatchers()
 
         binding.saveButton.setOnClickListener {
-//            val shoeSize: String = binding.shoeSizeInput.text.toString()
-//            val shoe: Shoe = Shoe(
-//                binding.nameInput.text.toString(),
-//                shoeSize.toDouble(),
-//                binding.companyInput.text.toString(),
-//                binding.descriptionInput.text.toString(),
-//                listOf()
-//            )
-//            shoeViewModel.add(shoe)
             shoeViewModel.add()
         }
 

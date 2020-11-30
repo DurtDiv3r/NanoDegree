@@ -22,6 +22,12 @@
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
+    <style name="DetailText">
+        <item name="android:textSize">@dimen/detail_text_size</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+
     <style name="ButtonStyle">
         <item name="android:stateListAnimator">@null</item>
         <item name="elevation">10dp</item>

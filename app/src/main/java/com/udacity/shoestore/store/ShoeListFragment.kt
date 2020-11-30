@@ -14,7 +14,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
-import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.viewmodel.ShoeViewModel
 
 class ShoeListFragment : Fragment() {
@@ -37,29 +36,25 @@ class ShoeListFragment : Fragment() {
         )
 
         shoeViewModel.shoeList.observe(viewLifecycleOwner, Observer { shoeList ->
-            val itemLayout: LinearLayout = binding.shoeCardLayout.findViewById(R.id.shoe_card_layout)
+            val itemLayout: LinearLayout =
+                binding.shoeCardLayout.findViewById(R.id.shoe_card_layout)
             if (shoeList.size > 0) {
                 if (binding.noItems.isVisible) {
                     binding.noItems.visibility = View.GONE
                 }
                 for (shoe in shoeList) {
-                    var addShoe: Shoe? = shoe.value
-
                     val view: View = layoutInflater.inflate(R.layout.shoe_layout, itemLayout, false)
                     val shoeNameTextView: TextView = view.findViewById(R.id.shoeNameTextView)
                     val shoeSizeTextView: TextView = view.findViewById(R.id.shoeSizeTextView)
                     val shoeCompanyTextView: TextView = view.findViewById(R.id.companyTextView)
                     val shoeDescriptionTextView: TextView = view.findViewById(R.id.descriptionTextView)
 
-                    if (addShoe != null) {
-                        shoeNameTextView.text = addShoe.name
-                        shoeSizeTextView.text = addShoe.size.toString()
-                        shoeCompanyTextView.text = addShoe.company
-                        shoeDescriptionTextView.text = addShoe.description
+                    shoeNameTextView.text = shoe.name
+                    shoeSizeTextView.text = shoe.size.toString()
+                    shoeCompanyTextView.text = shoe.company
+                    shoeDescriptionTextView.text = shoe.description
 
-                        itemLayout.addView(view)
-                    }
-
+                    itemLayout.addView(view)
                 }
             }
         })

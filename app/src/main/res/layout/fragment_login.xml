@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <variable
             name="loginFragment"
             type="com.udacity.shoestore.onboarding.LoginFragment" />
     </data>
 
     <androidx.cardview.widget.CardView
+        style="@style/CardStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/CardStyle">
+        android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -81,9 +80,9 @@
 
             <Button
                 android:id="@+id/loginButton"
+                style="@style/ButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                style="@style/ButtonStyle"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:enabled="false"
@@ -97,13 +96,13 @@
 
             <Button
                 android:id="@+id/registerButton"
+                style="@style/ButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:enabled="false"
-                style="@style/ButtonStyle"
                 android:text="@string/register_button_text"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

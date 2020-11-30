@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.cardview.widget.CardView
+        style="@style/CardStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/CardStyle">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,8 +23,8 @@
                 android:id="@+id/shoeNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginStart="8dp"/>
+                android:layout_marginStart="8dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/companyLabel"
@@ -39,8 +38,8 @@
                 android:id="@+id/companyTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginStart="8dp"/>
+                android:layout_marginStart="8dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/sizeLabel"
@@ -54,8 +53,8 @@
                 android:id="@+id/shoeSizeTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginStart="8dp"/>
+                android:layout_marginStart="8dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/descriptionLabel"
@@ -69,9 +68,9 @@
                 android:id="@+id/descriptionTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
